@@ -14,6 +14,8 @@ for (var i = 0; i < imgHolder.length; i++) {
     e.target.children[1].style.zIndex = '1';
   })
 }
+
+
 // bw
 var AboutMeWhiteAnimDiv = document.getElementsByClassName('AboutMeWhiteAnimDiv')[0];
 var AboutMeBlackAnimDiv = document.getElementsByClassName('AboutMeBlackAnimDiv')[0];
@@ -37,3 +39,11 @@ function myFunction() {
       AboutMeBlackAnimDiv.className += ' animateBlackClass';;
    }, 440);
 }
+
+
+
+// cheap
+var insideBottomBg = document.getElementsByClassName('insideBottomBg');
+// function cheapFun() {
+//
+// }
