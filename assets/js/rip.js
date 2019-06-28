@@ -6,7 +6,7 @@ $(document).ready(function() {
 		// 	perturbance: 0.04
 		// });
 		$('.myImg').ripples({
-			resolution: 500,
+			resolution: 512,
 			dropRadius: 20, //px
 			perturbance: 0.04
 		});
