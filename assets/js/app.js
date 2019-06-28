@@ -23,7 +23,7 @@ var aboutMe = document.getElementsByClassName('aboutMe')[0];
 
 var i=0;
 window.addEventListener("scroll", function(evt) {
-  if((window.innerWidth /100)* 86.7  < window.scrollY + window.innerHeight && i!==1){
+  if(window.innerHeight / 100 * 80 > aboutMe.getBoundingClientRect().top && i!==1){
     i=1;
     console.log(window.innerWidth /100 *120);
     console.log(window.scrollY);
@@ -43,7 +43,15 @@ function myFunction() {
 
 
 // cheap
-var insideBottomBg = document.getElementsByClassName('insideBottomBg');
-// function cheapFun() {
-//
-// }
+var mainBottomBg = document.getElementsByClassName('mainBottomBg');
+function cheapFun() {
+  if(window.innerHeight / 100 * 60 > mainBottomBg[0].getBoundingClientRect().top){
+    mainBottomBg[0].style.background = '#e2cf31';
+  }else{
+    mainBottomBg[0].style.background = '#fcf4ef';
+  }
+}
+
+window.addEventListener("scroll",()=>{
+  cheapFun();
+});

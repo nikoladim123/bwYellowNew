@@ -257,6 +257,7 @@ main{
 }
 
 .mainBottomBg{
+  transition: 1.5s;
   position: absolute;
   height: 82.8vw;
   width: 100%;
@@ -264,7 +265,8 @@ main{
   transform:skewY(-13deg);
   background-size: 100% 100%;
   overflow: hidden;
-  background: #e2cf31;
+  /* background: #e2cf31; */
+  background: #fcf4ef;
 }
 
 .insideBottomBg{
@@ -533,7 +535,7 @@ main{
     position: absolute;
     width: 100%;
     height: 86.0599vw;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-image: url(../images/desktop/cover.jpg);
     background-size: 100% 100%;
     /* z-index: 5; */
