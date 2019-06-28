@@ -45,7 +45,7 @@ function myFunction() {
 // cheap
 var mainBottomBg = document.getElementsByClassName('mainBottomBg');
 function cheapFun() {
-  if(window.innerHeight / 100 * 60 > mainBottomBg[0].getBoundingClientRect().top){
+  if(window.innerHeight / 100 * 50 > mainBottomBg[0].getBoundingClientRect().top){
     mainBottomBg[0].style.background = '#e2cf31';
   }else{
     mainBottomBg[0].style.background = '#fcf4ef';
