@@ -31,6 +31,7 @@ header{
   margin-bottom: 1.55vw;
 }
 .three {
+  pointer-events: none;
   position: absolute;
   width: 100%;
   box-sizing: border-box;
@@ -101,6 +102,10 @@ header{
   font-family: 'OldStandard-Bold';
   font-family: 'Blacksword';
   position: relative;
+  font-size: 2.21vw;
+  text-shadow: 2px -1px 0px rgba(163,163,163,0.47);
+  color: #d6ce39;
+  margin-right: 0.5vw;
 }
 
 .initContainer h1{
@@ -174,6 +179,7 @@ header{
   top: 9.3865vw;
   left: 67.55vw;
   animation: 5s recentProjects;
+  animation-fill-mode: forwards;
 }
 .recentProjects P{
   white-space: nowrap;
@@ -200,7 +206,7 @@ header{
   100%{
     left: 67.55vw;
     filter:blur(0px);
-    width: 34.09vw;
+    width: 28.5vw;
   }
 }
 
@@ -232,7 +238,7 @@ header{
 }
 
 .yellowOverlay{
-  transition: 0.3s;
+  transition: 0.6s;
   pointer-events: none;
   z-index: 1;
   position: absolute;
@@ -520,4 +526,15 @@ main{
   background-color: white;
   height: 0.3vw;
   margin-bottom: 3.11vw;
+}
+
+
+.myImg {
+    position: absolute;
+    width: 100%;
+    height: 86.0599vw;
+    border: 2px solid red;
+    background-image: url(../images/desktop/cover.jpg);
+    background-size: 100% 100%;
+    /* z-index: 5; */
 }
