@@ -6,9 +6,9 @@ $(document).ready(function() {
 		// 	perturbance: 0.04
 		// });
 		$('.myImg').ripples({
-			resolution: 1512,
-			dropRadius: 20, //px
-			perturbance: 0.04
+			resolution: 1024,
+			dropRadius: 10, //px
+			perturbance: 0.02
 		});
 	}
 	catch (e) {
