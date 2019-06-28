@@ -7,7 +7,7 @@ $(document).ready(function() {
 		// });
 		$('.myImg').ripples({
 			resolution: 1024,
-			dropRadius: 10, //px
+			dropRadius: 3, //px
 			perturbance: 0.02
 		});
 	}
