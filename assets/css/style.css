@@ -541,11 +541,13 @@ main{
   color:#c58f42;
 }
 
-.bottomServices{
+.bottomServices {
   position: absolute;
-  bottom: 0px;
+  margin: 0;
+  /* bottom: 0px; */
   margin-left: 50%;
-  left:-8vw;
+  top: -16vw;
+  left: -8vw;
 }
 
 .bottomServices p{
