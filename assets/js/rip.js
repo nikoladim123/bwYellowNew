@@ -8,7 +8,8 @@ $(document).ready(function() {
 		$('.myImg').ripples({
 			resolution: 512,
 			dropRadius: 20, //px
-			perturbance: 0.04
+			perturbance: 0.04,
+			interactive: false
 		});
 	}
 	catch (e) {
@@ -25,5 +26,5 @@ $(document).ready(function() {
 		var strength = 0.04 + Math.random() * 0.04;
 
 		$el.ripples('drop', x, y, dropRadius, strength);
-	}, 999000);
+	}, 5999);
 });
