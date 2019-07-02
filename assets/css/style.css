@@ -613,6 +613,7 @@ main{
 }
 /* threeImageContent */
 .threeImageContent{
+  z-index: 1;
   width: 100%;
   height: 48.804vw;
   display: flex;
@@ -628,11 +629,12 @@ main{
   width: 0%;
   flex-grow: 1;
   background-position: center;
-  background-size: auto 150%;
+  /* background-size: auto 150%; */
+  background-size:cover;
 }
 .contentBox:hover{
   width: 80%;
-  background-size: auto 280%;
+  /* background-size: auto 280%; */
 }
 
 .contentBox:nth-child(1){
@@ -683,6 +685,8 @@ main{
 }
 
 .recentWorkImgDiv h2{
+  /* transition: 2s; */
+  margin: 0;
   margin-left: 9vw;
   font-weight: 100;
   position: relative;
@@ -690,9 +694,20 @@ main{
   color: white;
   font-family: 'Montserrat-Thin';
   top: -8.8vw;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip: text; */
+  background: -webkit-linear-gradient(360deg, rgba(255,255,255,0), rgba(255,255,255,0));
+  -webkit-background-clip: text !important;
+
+  position: fixed;
+  top: 50vh;
 }
 .spanCapital{
   font-size: 9.76vw;
+}
+.recentWorkImgDivHtwo{
+  position: fixed;
+  top: 50vh;
 }
 
 .spanWork{
