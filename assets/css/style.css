@@ -275,7 +275,8 @@ main{
   position: relative;
   height: 102.96vw;
   /* background: #fcf4ef; */
-  background: linear-gradient(to bottom, rgba(60,65,69,1) 35%, rgba(104,108,111,1) 120%);
+  /* background: linear-gradient(to bottom, rgba(60,65,69,1) 35%, rgba(104,108,111,1) 120%); */
+  background:linear-gradient(to bottom, #3c4145, #474b4f, #51565a, #5d6164, #686c6f);
   overflow: hidden;
 }
 
@@ -303,16 +304,29 @@ main{
   background-size: 100% 100%;
 }
 
-.picProgBox{
-  position: absolute;
-  width: 40.32vw;
-  height: 66.86vw;
-  left: 40.91vw;
-  top:15.27vw;
-  /* box-shadow: 13px 18px 13px 2px rgba(0,0,0,0.21); */
-  box-shadow: 13px 18px 13px 2px rgba(0,0,0,0.21);
-  background-color: #565a5d;
+.picProgBox {
+    position: absolute;
+    width: 40.32vw;
+    height: 62.86vw;
+    left: 40.91vw;
+    top: 15.27vw;
+        box-shadow: 51px 18px 44px 2px rgba(0,0,0,0.15);
+    /* box-shadow: 13px 18px 13px 2px rgba(0,0,0,0.21); */
+    /* background-color: #565a5d; */
+    background-image: url('../images/common/progBG.png');
+    background-size: 112% 108%;
+    background-position: 3% 31%;
 }
+/* .picProgBox::before{
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 5vw;
+  top: 0;
+  right: 0;
+  box-shadow: 20px 18px 44px 2px rgba(0,0,0,0.21);
+} */
 .mainImg{
   position: absolute;
   width: 30.155vw;
@@ -324,7 +338,7 @@ main{
   position: absolute;
   width: 26.31vw;
   left: 10.67vw;
-  bottom: 2.37vw;
+  bottom: 3.37vw;
 }
 
 .progBarDiv p{
@@ -333,11 +347,14 @@ main{
   font-size: 1.03vw;
   color: #434343;
   margin: 0;
+  margin-bottom: 0.2vw;
+  letter-spacing: 0.2vw;
 }
 /*PROGbar one*/
 .progBox{
-  margin-top: 1.5vw;
+  margin-top: 1.3vw;
 }
+
 
 .progBox span{
   margin-right: 2px;
@@ -372,16 +389,19 @@ main{
 /*OVERLAY DIV*/
 .overlayDiv{
   position: absolute;
-  height: 57.74vw;
+  height: 65.74vw;
   width: 30.31vw;
   top:8.59vw;
-  left: 17.56vw;
+  left: 16.7vw;
   background-size: 100% 100%;
   /* background-image: url('../images/common/LayerTwo.png'); */
-  box-shadow: 13px 18px 13px 2px rgba(0,0,0,0.21);
+      box-shadow: 86px 66px 64px 2px rgba(0,0,0,0.11);
+}
+.LayerTwo{
+  width: 118%;
 }
 .overlayBG{
-  background: linear-gradient(to right, rgba(60,65,69,1) 0%, rgba(60,65,69,1) 9%, rgba(104,108,111,1) 100%);
+  /* background: linear-gradient(to right, rgba(60,65,69,1) 0%, rgba(60,65,69,1) 9%, rgba(104,108,111,1) 100%); */
   width: 100%;
   height: 100%;
   position: absolute;
@@ -401,7 +421,7 @@ main{
 /* ANIMATION ANIMATION */
 .aboutMeContainer{
   position: relative;
-  top: 5vw;
+  top: 8vw;
 }
 .aboutMe{
   position: relative;
@@ -483,6 +503,11 @@ main{
   margin: 0;
   margin-left: 6.3vw;
   font-weight: 100;
+      top: -13vw;
+      position: relative;
+}
+.aboutMe span{
+  font-size: 16.251vw;
 }
 
 .logoTwo{
@@ -501,6 +526,7 @@ main{
   padding-left: 1.37vw;
   padding-right: 1.52vw;
   display: flex;
+  left: -2vw;
   /* text-align: justify; */
   height: 22.8vw;
   font-size: 3.5139vw;
@@ -527,7 +553,8 @@ main{
 .services{
   position: relative;
   text-align: center;
-  margin-top: 5.5vw;
+  margin-top: 13.5vw;
+  left: 2vw;
 }
 
 .services a{
