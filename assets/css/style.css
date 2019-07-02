@@ -328,9 +328,10 @@ main{
 }
 
 .progBarDiv p{
-  font-family: 'Old Standard TT', serif;
+  /* font-family: 'Old Standard TT', serif; */
+  font-family: 'Montserrat-Light';
   font-size: 1.03vw;
-  color: #4a4b4c;
+  color: #434343;
   margin: 0;
 }
 /*PROGbar one*/
@@ -353,6 +354,7 @@ main{
   height: 10px;
   width: 84.5%;
   background: #4a4b4c;
+  border: 1px solid #73777a;
 }
 /*PROGbar one END*/
 .progTwo{
@@ -514,6 +516,7 @@ main{
   margin-top: -0.2vw;
   color:#c58f42;
   filter: brightness(1);
+  font-family: 'Montserrat-Light';
 }
 
 #moreAboutmeP:hover{
