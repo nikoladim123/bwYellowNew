@@ -49,7 +49,7 @@ header{
   position: relative;
   height: 86.0599vw;
   overflow:hidden;
-  margin-bottom: 1.55vw;
+  /* margin-bottom: 1.55vw; */
 }
 .three {
   pointer-events: none;
