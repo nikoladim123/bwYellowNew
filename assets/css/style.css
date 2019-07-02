@@ -272,6 +272,7 @@ header{
 }
 /* main */
 main{
+  z-index: 1;
   position: relative;
   height: 102.96vw;
   /* background: #fcf4ef; */
