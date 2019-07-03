@@ -753,10 +753,12 @@ main{
   margin-bottom: 15vw;
   transform: scale(1);
   overflow: hidden;
+  cursor: url("../images/common/cross.png") 63.5 63.5,pointer ;
 }
 
 .rnd:hover{
-  cursor: pointer;
+  /* cursor: url("../images/common/cross.cur"); */
+  /* cursor: none; */
   transform: scale(0.9);
 }
 .rnd:hover > .rndImg{
@@ -785,6 +787,7 @@ main{
 }
 
 .rndInsideContent{
+  pointer-events: none;
   transition: 0.4s;
   transition-delay: 0.4s;
   background-color: rgba(198,216,0,0.84);

@@ -138,6 +138,33 @@ rnd[0].addEventListener('mouseleave',()=>{
   rndInside[0].style.opacity = '0';
 })
 
+// rnd cursor
+// var cursor = document.getElementsByClassName('cursor')[0];
+//
+// rnd[0].addEventListener('mousemove',rndCursor)
+//
+// function rndCursor(e) {
+//   // e = Mouse click event.
+//   var rect = e.target.getBoundingClientRect();
+//   var x = e.layerX ; //x position within the element.
+//   var y = e.layerY ;  //y position within the element.
+//   if (x > 7 && y >7) {
+//     cursor.style.left = x + 'px';
+//     cursor.style.top = y + 'px';
+//   }
+//
+//   console.log(e);
+// }
+//
+// let screenLog = document.querySelector('#screen-log');
+// rnd[0].addEventListener('mousemove', logKey);
+//
+// function logKey(e) {
+//   console.log(e.offsetX ,e.offsetY);
+//   // screenLog.innerText = `
+//   //   Screen X/Y: ${e.screenX}, ${e.screenY}
+//   //   Client X/Y: ${e.clientX}, ${e.clientY}`;
+// }
 
 
 
