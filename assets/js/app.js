@@ -121,6 +121,26 @@ recentWorkImgDiv[0].addEventListener('mouseleave',()=>{
 });
 
 
+// picture hover layerinside rnd
+var rnd = document.getElementsByClassName('rnd');
+var rndInside = document.getElementsByClassName('rndInside');
+var rndInsideContent = document.getElementsByClassName('rndInsideContent');
+
+rnd[0].addEventListener('mouseenter',()=>{
+  rndInside[0].style.opacity = '1';
+  rndInsideContent[0].style.width = '80%';
+  rndInsideContent[0].style.height = '85%';
+});
+
+rnd[0].addEventListener('mouseleave',()=>{
+  rndInsideContent[0].style.width = '0%';
+  rndInsideContent[0].style.height = '0%';
+  rndInside[0].style.opacity = '0';
+})
+
+
+
+
 window.addEventListener("scroll",()=>{
   cheapFun();
 });

@@ -768,3 +768,45 @@ main{
   width: 100%;
   height: 100%;
 }
+
+.rndInside{
+  transition: 0.8s;
+  background: rgba(0,0,0,0.64);
+  opacity: 0;
+  /* padding: 10%; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rndInsideContent{
+  transition: 0.4s;
+  transition-delay: 0.4s;
+  background-color: rgba(198,216,0,0.84);
+  position: relative;
+  /* width: 80%; */
+  /* height: 85%; */
+  width: 0%;
+  height: 0%;
+  /* border: 1px solid red; */
+}
+.rndSocialContainer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.socialBox{
+  width: 5vw;
+  height: 5vw;
+  margin: 0.5vw;
+  margin-bottom: 3vw;
+  background: rgba(0,0,0,0.64);
+}
