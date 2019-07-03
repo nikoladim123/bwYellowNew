@@ -686,6 +686,7 @@ main{
 }
 
 .recentWorkImgDiv h2{
+  pointer-events: none;
   /* transition: 2s; */
   margin: 0;
   margin-left: 9vw;
@@ -743,10 +744,27 @@ main{
   font-family: 'Montserrat-ExtraBold';
 }
 
-.rnd {
+.rnd{
+  transition: 1s;
   width: 39.04vw;
   position: relative;
   left: -19.52vw;
   margin-left: 50%;
   margin-bottom: 15vw;
+  transform: scale(1);
+  overflow: hidden;
+}
+
+.rnd:hover{
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.rnd:hover > .rndImg{
+  transform: scale(1.3);
+}
+.rndImg{
+  transform: scale(1);
+  transition: 1s;
+  width: 100%;
+  height: 100%;
 }
