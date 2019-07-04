@@ -721,10 +721,10 @@ main{
   font-family: 'Montserrat-ExtraBold';
 }
 
-.sideImgText{
-  position: absolute;
-  right: -3vw;
-  top: 3vw;
+.sideImgText {
+  position: fixed;
+  right: 12vw;
+  top: 10vh;
   writing-mode: tb;
   font-family: 'Montserrat-Light';
   font-size: 1.17vw;
@@ -738,12 +738,18 @@ main{
   position: relative;
   display: inline-block;
 }
-
-.recentImgItaly{
+.recentImgItalyContainer{
+  transition: 1s;
+  /* border: 1px solid red; */
+  overflow: hidden;
   position: absolute;
   bottom: -12vw;
   right: 0;
   color: white;
+  width: 0vw;
+}
+.recentImgItaly{
+  width: 18vw;
   font-size: 3.5139vw;
   font-family: 'Montserrat-ExtraBold';
 }
@@ -881,7 +887,7 @@ main{
   height: 100%;
   width: 33vw;
   /* background: blue; */
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .carBox:hover{
   z-index: 1;

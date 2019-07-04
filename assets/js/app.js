@@ -56,13 +56,35 @@ function myFunction() {
 var recentWorkImgDivHtwo = document.getElementsByClassName('recentWorkImgDivHtwo');
 var recentWorkImgDiv = document.getElementsByClassName('recentWorkImgDiv');
 
-
 recentWorkImgDiv[0].addEventListener('mouseenter',()=>{
   recentWorkImgDivHtwo[0].style.backgroundPosition = '0%';
 });
 recentWorkImgDiv[0].addEventListener('mouseleave',()=>{
   recentWorkImgDivHtwo[0].style.backgroundPosition = '200%';
 });
+
+function workTextFixScroll() {
+  if(window.innerHeight / 100 * 80 >= recentWorkImgDiv[0].getBoundingClientRect().bottom){
+    // recentWorkImgDivHtwo[0].style.position = 'absolute';
+    // recentWorkImgDivHtwo[0].style.top = '-8.8vw';
+    console.log(123);
+  }
+  else{
+    recentWorkImgDivHtwo[0].style.position = 'fixed';
+    recentWorkImgDivHtwo[0].style.top = '20vh';
+  }
+}
+
+// davidOmid Italy Fun
+var recentImgItaly = document.getElementsByClassName('recentImgItaly');
+var recentImgItalyContainer = document.getElementsByClassName('recentImgItalyContainer');
+
+
+function davidOmidFire() {
+  if(window.innerHeight / 100 * 78 >= recentImgItaly[0].getBoundingClientRect().bottom){
+    recentImgItalyContainer[0].style.width = '19vw';
+  }
+}
 
 
 // picture hover layerinside rnd
@@ -170,6 +192,8 @@ function instaTextAnimFire() {
 
 window.addEventListener("scroll",()=>{
   instaTextAnimFire();
-  instaAnimTwo()
+  instaAnimTwo();
+  workTextFixScroll();
+  davidOmidFire();
   // cheapFun();
 });
