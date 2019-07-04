@@ -57,67 +57,11 @@ var recentWorkImgDivHtwo = document.getElementsByClassName('recentWorkImgDivHtwo
 var recentWorkImgDiv = document.getElementsByClassName('recentWorkImgDiv');
 
 
-var workIterate = 0;
-var workIterateTwo = 0;
-var showTxt;
-var hideTxt;
-
-function bla(){
-  showTxt =
-    setInterval(function () {
-      recentWorkImgDivHtwo[0].style.background = `-webkit-linear-gradient(360deg, rgba(255,255,255,${workIterate}), rgba(255,255,255,${workIterateTwo}))`;
-      if (workIterateTwo <= 1) {
-        workIterate+=0.1;
-      }
-      if (workIterateTwo <= 1) {
-        setTimeout(function () {
-          workIterateTwo+=0.1;
-        }, 300);
-      }
-      if (workIterateTwo >= 0.8) {
-        clearInterval(showTxt);
-      }
-      console.log(workIterateTwo);
-    }, 20);
-};
-
-function ble(){
-  hideTxt =
-    setInterval(function () {
-      recentWorkImgDivHtwo[0].style.background = `-webkit-linear-gradient(360deg, rgba(255,255,255,${workIterate}), rgba(255,255,255,${workIterateTwo}))`;
-      if (workIterateTwo >= 0) {
-        workIterate-=0.1;
-      }
-      if (workIterateTwo >= 0) {
-        setTimeout(function () {
-          workIterateTwo-=0.1;
-        }, 300);
-      }
-      if (workIterateTwo <= 0) {
-        clearInterval(hideTxt);
-      }
-      console.log(workIterateTwo);
-    }, 20);
-};
-
-
 recentWorkImgDiv[0].addEventListener('mouseenter',()=>{
-  clearInterval(hideTxt);
-  clearInterval(showTxt);
-  // callWorkShow();
-  bla();
-  console.log(1);
+  recentWorkImgDivHtwo[0].style.backgroundPosition = '0%';
 });
-
 recentWorkImgDiv[0].addEventListener('mouseleave',()=>{
-  clearInterval(hideTxt);
-  clearInterval(showTxt);
-  // callWorkHide();
-  // ble();
-  setTimeout(function () {
-    ble();
-  }, 100);
-  console.log(2);
+  recentWorkImgDivHtwo[0].style.backgroundPosition = '200%';
 });
 
 
