@@ -1,4 +1,8 @@
 @font-face {
+  font-family: 'Voga-Medium';
+  src:url('../fonts/Voga-Medium.otf') format('opentype');
+}
+@font-face {
   font-family: 'Blacksword';
   src:url('../fonts/Blacksword.otf') format('opentype');
 }
@@ -499,7 +503,7 @@ main{
 /* ANIMATION ANIMATION */
 .aboutMe p{
   font-family: 'Blacksword';
-  color:#c58f42;
+  color:rgba(196,194,57,0.5);
   font-size: 3.4vw;
   margin: 0;
   margin-left: 6.3vw;
@@ -520,7 +524,7 @@ main{
   width: 3.55vw;
 }
 
-.textBox{
+.textBoxAboutMe{
   position: relative;
   margin-top: 12.59vw;
   overflow: hidden;
@@ -541,7 +545,7 @@ main{
   font-size: 1.1vw;
   margin-left: 2vw;
   margin-top: -0.2vw;
-  color:#c58f42;
+  color:rgba(196,194,57,0.5);
   filter: brightness(1);
   font-family: 'Montserrat-Light';
 }
@@ -569,7 +573,7 @@ main{
 }
 
 .services a:hover{
-  color:#c58f42;
+  color:rgba(196,194,57,0.5);
 }
 
 .bottomServices {
@@ -584,7 +588,7 @@ main{
 .bottomServices p{
   font-weight: 100;
   font-size: 3.513vw;
-  color:#c58f42;
+  color:rgba(196,194,57,0.5);
   font-family: 'Blacksword';
   margin-bottom: -1.3vw;
 }
@@ -664,7 +668,7 @@ main{
 /* recentWorks */
 .recentWorks{
   position: relative;
-  background: black;
+  background: #0c0e14;
   padding: 0.1px;
 }
 
@@ -686,7 +690,7 @@ main{
 }
 
 .recentWorkImgDiv h2{
-  pointer-events: none;
+  /* pointer-events: none; */
   /* transition: 2s; */
   margin: 0;
   margin-left: 9vw;
@@ -702,8 +706,8 @@ main{
   background: -webkit-linear-gradient(360deg, rgba(255,255,255,0), rgba(255,255,255,0));
   -webkit-background-clip: text !important;
 
-  position: fixed;
-  top: 50vh;
+  /* position: fixed; */
+  /* top: 50vh; */
 }
 .spanCapital{
   font-size: 9.76vw;
@@ -750,7 +754,7 @@ main{
   position: relative;
   left: -19.52vw;
   margin-left: 50%;
-  margin-bottom: 15vw;
+  margin-bottom: 18.195vw;
   transform: scale(1);
   overflow: hidden;
   cursor: url("../images/common/cross.png") 63.5 63.5,pointer ;
@@ -813,3 +817,312 @@ main{
   margin-bottom: 3vw;
   background: rgba(0,0,0,0.64);
 }
+
+.rndTwo{
+  width: 58.5vw;
+  left: -29.25vw;
+}
+
+
+/* normalCarSection */
+.normalCarSection{
+  height: 46vw;
+  background: black;
+  position: relative;
+  padding: 0.1px;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.normalCarSectionHTWO{
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: rgba(196,194,57,0.5);
+  font-family: 'Blacksword';
+  font-size: 3.9vw;
+  top: -9vw;
+}
+.normalCarSectionHTWO span{
+  font-size: 12.195vw;
+  letter-spacing: -2vw;
+}
+
+.carContainerNorm{
+  overflow: hidden;
+  position: relative;
+  /* border: 1px solid red; */
+  width: 100%;
+  /* margin-top: 7.219vw; */
+  height: 100%;
+}
+.carContainerNorm:hover > .leftCarArrowBox{
+  background: rgba(0, 0, 0, 0.3);
+}
+.carContainerNorm:hover > .rightCarArrowBox{
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.carMoving{
+  left: 0;
+  transition: 1s;
+  position: relative;
+  height: 30.5vw;
+  margin-top: 7.2vw;
+  display: flex;
+  /* flex:auto; */
+}
+
+.carBox{
+  z-index: auto;
+  transition: 1s;
+  position: relative;
+  flex: 0 0 33.2%;
+  height: 100%;
+  width: 33vw;
+  /* background: blue; */
+  border: 1px solid black;
+}
+.carBox:hover{
+  z-index: 1;
+  transform: scale(1.3);
+}
+.firstCarBox{
+  transform-origin: left;
+}
+.lastCarBox{
+  transform-origin: right;
+}
+.carBoxImageBG{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.carBoxOverlayYellow{
+  pointer-events: none;
+  transition: 0.4s;
+  transition-delay: 0.2s;
+  /* background-color: rgba(198,216,0,0.84); */
+  background-color: rgba(198,216,0,0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.carBox:hover > .carBoxOverlayYellow{
+  background-color: rgba(198,216,0,0.84);
+}
+
+.leftCarArrowBox,.rightCarArrowBox{
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  position: absolute;
+  left: 0;
+  top: 0vw;
+  opacity: 1;
+  width: 5.512vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.rightCarArrowBox{
+  left: auto;
+  right: 0;
+}
+.leftCarArrowBox:hover,
+.rightCarArrowBox:hover{
+  cursor: pointer;
+}
+
+.leftCarArrowBox img,.rightCarArrowBox img{
+  width: 100%;
+}
+
+
+/* testimonialsSection */
+.testimonialsSection{
+  background: #0c0e14;
+  min-height: 10vw;
+  padding-top:
+}
+
+.carTwoHtwo{
+  position: relative;
+  height: 0;
+  z-index: 1;
+  top: -4vw;
+}
+
+/* instagramSection */
+.instagramSection{
+  padding:0.1px;
+  margin-top: 14.243vw;
+  position: relative;
+  background: black;
+  min-height: 10vw;
+}
+.instagramSection h2{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 2vw;
+  top: 2.5vw;
+  color: rgba(196,194,57,0.5);
+  font-family: 'Blacksword';
+  font-size: 3.9vw;
+  margin: 0;
+}
+.instagramSection h2 span{
+  font-size: 12.195vw;
+  letter-spacing: -2vw;
+}
+
+.yellowInstagramBnd{
+  /* margin-top: 6.6829vw; */
+  transition: 2s;
+  top: 0vw;
+  left: -150%;
+  width: 150%;
+  height: 14.975vw;
+  position: relative;
+  /* background-color: #d5d163; */
+  background: linear-gradient(to right, rgba(213,209,99,0) 0%, rgba(213,209,99,1) 25%, rgba(213,209,99,1) 50%, rgba(213,209,99,1) 75%, rgba(213,209,99,0) 100%);
+
+}
+.yellowInstagramBndContainer{
+  overflow: hidden;
+  top: 5vw;
+  position: relative;
+  width: 100%;
+  height: 14.975vw;
+  /* border: 1px solid red; */
+}
+/* background: linear-gradient(to right, rgba(213,209,99,0) 0%, rgba(213,209,99,1) 25%, rgba(213,209,99,1) 50%, rgba(213,209,99,1) 100%); */
+.instagramSectionHTWO{
+  transition: 1s;
+  opacity: 0;
+  font-weight: 100;
+}
+
+.instagramTwoHtwo{
+  font-weight: 100;
+  top: auto !important;
+  bottom: -6vw;
+  opacity: 0;
+}
+.yellowInstagramBndContainerTwo{
+  top: auto;
+  bottom: 0vw;
+  width: 100%;
+}
+
+
+.gridBoxSpecial{
+  transition: 2s;
+  width: 70vw;
+  height: 41.463vw;
+  margin-left: 50%;
+  margin-top: 16.341vw;
+  margin-bottom: 2.63vw;
+  left: -35vw;
+  position: relative;
+  /* background: rgba(100,100,100,100.3); */
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 33% 33% 33%;
+    grid-gap: 0.222vw;
+}
+.gridBoxSpecial img{
+  width: 100%;
+  height: 100%;
+}
+
+.gridBoxSpecial div{
+  position: relative;
+  overflow: hidden;
+}
+.gridBoxSpecial div:hover{
+  cursor: pointer;
+}
+.gridBoxSpecial div:nth-child(1) h2{
+  pointer-events: none;
+  font-family: 'Blacksword',serif;
+  position: relative;
+  z-index: 1;
+  writing-mode:tb-rl;
+  color: white;
+  font-size: 6vw;
+  margin: 0;
+  margin-top: 0.2vw;
+  margin-left: -2vw;
+  font-weight: 100;
+}
+.gridBoxSpecial div:nth-child(1){
+  background-color: rgb(235,217,110);
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.gridBoxSpecial div:nth-child(2){
+  grid-row: 1/4;
+  grid-column: 2/3;
+}
+.gridBoxSpecial div:nth-child(3){
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.gridBoxSpecial div:nth-child(4){
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.gridBoxSpecial div:nth-child(5){
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+.gridBoxSpecial div:nth-child(6){
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+/* grid effect */
+.gridBoxSpecial div::after,.gridBoxSpecial div::after{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.gridBoxSpecial div:hover:after,.gridBoxSpecial div:hover:after{
+  background-color: #ffa806;
+  opacity: 0.7;
+}
+.gridBoxSpecial div::before,.gridBoxSpecial div::before{
+  content: '';
+  display: block;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  position: absolute;
+  width: 20%;
+  height: 180%;
+  top: 1px;
+  bottom: 1px;
+  /* opacity: 0.2;  */
+  top:-120%;
+  left: 10%;
+  transition: 2s;
+  transform: rotate(45deg);
+  /* z-index: 5; */
+}
+.gridBoxSpecial div:hover:before,.gridBoxSpecial div:hover:before{
+  top:100%;
+  left:100%;
+}
+/* grid effect */

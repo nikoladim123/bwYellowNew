@@ -43,14 +43,14 @@ function myFunction() {
 
 
 // cheap
-var mainBottomBg = document.getElementsByClassName('mainBottomBg');
-function cheapFun() {
-  if(window.innerHeight / 100 * 50 > mainBottomBg[0].getBoundingClientRect().top){
-    mainBottomBg[0].style.background = '#e2cf31';
-  }else{
-    mainBottomBg[0].style.background = '#fcf4ef';
-  }
-}
+// var mainBottomBg = document.getElementsByClassName('mainBottomBg');
+// function cheapFun() {
+//   if(window.innerHeight / 100 * 50 > mainBottomBg[0].getBoundingClientRect().top){
+//     mainBottomBg[0].style.background = '#e2cf31';
+//   }else{
+//     mainBottomBg[0].style.background = '#fcf4ef';
+//   }
+// }
 
 // work text
 var recentWorkImgDivHtwo = document.getElementsByClassName('recentWorkImgDivHtwo');
@@ -125,7 +125,7 @@ recentWorkImgDiv[0].addEventListener('mouseleave',()=>{
 var rnd = document.getElementsByClassName('rnd');
 var rndInside = document.getElementsByClassName('rndInside');
 var rndInsideContent = document.getElementsByClassName('rndInsideContent');
-
+  // rnd1
 rnd[0].addEventListener('mouseenter',()=>{
   rndInside[0].style.opacity = '1';
   rndInsideContent[0].style.width = '80%';
@@ -136,38 +136,96 @@ rnd[0].addEventListener('mouseleave',()=>{
   rndInsideContent[0].style.width = '0%';
   rndInsideContent[0].style.height = '0%';
   rndInside[0].style.opacity = '0';
-})
+});
 
-// rnd cursor
-// var cursor = document.getElementsByClassName('cursor')[0];
-//
-// rnd[0].addEventListener('mousemove',rndCursor)
-//
-// function rndCursor(e) {
-//   // e = Mouse click event.
-//   var rect = e.target.getBoundingClientRect();
-//   var x = e.layerX ; //x position within the element.
-//   var y = e.layerY ;  //y position within the element.
-//   if (x > 7 && y >7) {
-//     cursor.style.left = x + 'px';
-//     cursor.style.top = y + 'px';
-//   }
-//
-//   console.log(e);
-// }
-//
-// let screenLog = document.querySelector('#screen-log');
-// rnd[0].addEventListener('mousemove', logKey);
-//
-// function logKey(e) {
-//   console.log(e.offsetX ,e.offsetY);
-//   // screenLog.innerText = `
-//   //   Screen X/Y: ${e.screenX}, ${e.screenY}
-//   //   Client X/Y: ${e.clientX}, ${e.clientY}`;
-// }
+  // rnd2
+rnd[1].addEventListener('mouseenter',()=>{
+  rndInside[1].style.opacity = '1';
+  rndInsideContent[1].style.width = '81%';
+  rndInsideContent[1].style.height = '85%';
+});
+
+rnd[1].addEventListener('mouseleave',()=>{
+  rndInsideContent[1].style.width = '0%';
+  rndInsideContent[1].style.height = '0%';
+  rndInside[1].style.opacity = '0';
+});
+
+
+// carContainer
+var carContainer = document.getElementsByClassName('carContainer');
+var carMoving = document.getElementsByClassName('carMoving');
+var leftCarArrowBox = document.getElementsByClassName('leftCarArrowBox');
+var rightCarArrowBox = document.getElementsByClassName('rightCarArrowBox');
+
+
+var carPosition = 0 ;
+
+function carleft() {
+  if(carPosition > carMoving[0].children.length * -33 + (3 *33)){
+    carPosition -= 33.3333;
+  }
+  carMoving[0].style.left = carPosition + '%';
+}
+
+function carRight() {
+  if(carPosition < 0){
+    carPosition += 33.3333;
+  }
+  carMoving[0].style.left = carPosition + '%';
+}
+
+leftCarArrowBox[0].addEventListener('click',()=>{
+  carRight()
+});
+
+rightCarArrowBox[0].addEventListener('click',()=>{
+  carleft()
+});
+
+
+// instagram anims
+var instagramSectionHTWO = document.getElementsByClassName('instagramSectionHTWO');
+var instagramTwoHtwo = document.getElementsByClassName('instagramTwoHtwo');
+var yellowInstagramBnd = document.getElementsByClassName('yellowInstagramBnd');
+var gridBoxSpecial = document.getElementsByClassName('gridBoxSpecial');
+
+function instaAnim() {
+  yellowInstagramBnd[0].style.left = '100%';
+  setTimeout(function () {
+    instagramSectionHTWO[0].style.opacity = '1';
+    setTimeout(function () {
+      gridBoxSpecial[0].style.marginTop = '1.341vw';
+    }, 500);
+  }, 500);
+};
+
+function instaAnimTwo() {
+  if(window.innerHeight / 100 * 60 > yellowInstagramBnd[1].getBoundingClientRect().top){
+    yellowInstagramBnd[1].style.left = '100%';
+    setTimeout(function () {
+      instagramTwoHtwo[0].style.opacity = '1';
+    }, 500);
+  }else{
+
+  }
+}
+
+
+
+function instaTextAnimFire() {
+  if(window.innerHeight / 100 * 60 > yellowInstagramBnd[0].getBoundingClientRect().top){
+    instaAnim()
+  }else{
+
+  }
+  // console.log(instaBG[0].getBoundingClientRect());
+}
 
 
 
 window.addEventListener("scroll",()=>{
-  cheapFun();
+  instaTextAnimFire();
+  instaAnimTwo()
+  // cheapFun();
 });
