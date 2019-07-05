@@ -128,7 +128,7 @@ var rightCarArrowBox = document.getElementsByClassName('rightCarArrowBox');
 var carPosition = 0 ;
 
 function carleft() {
-  if(carPosition > carMoving[0].children.length * -33 + (3 *33)){
+  if(carPosition > -263.333){
     carPosition -= 33.3333;
   }
   carMoving[0].style.left = carPosition + '%';
@@ -177,8 +177,6 @@ function instaAnimTwo() {
   }
 }
 
-
-
 function instaTextAnimFire() {
   if(window.innerHeight / 100 * 60 > yellowInstagramBnd[0].getBoundingClientRect().top){
     instaAnim()
@@ -188,9 +186,84 @@ function instaTextAnimFire() {
   // console.log(instaBG[0].getBoundingClientRect());
 }
 
+// portfolio text anim
+var carContainerNorm = document.getElementsByClassName('carContainerNorm');
+var normalCarSection = document.getElementsByClassName('normalCarSection');
+var normalCarSectionHTWO = document.getElementsByClassName('normalCarSectionHTWO');
+var hTwoSpamNorm = document.getElementsByClassName('hTwoSpamNorm');
+
+
+
+var portFontSize = 8.9;
+var portSpanSize = 17.195;
+var portTop = -20;
+var portOpacity = 0.5;
+function portfolioRun() {
+  if(window.innerHeight / 100 * 90 > carContainerNorm[0].getBoundingClientRect().top){
+    if(portFontSize >= 3.9){
+      portFontSize-=0.1;
+      normalCarSectionHTWO[0].style.fontSize = portFontSize + 'vw';
+    }
+    if (portSpanSize >= 12.195) {
+      portSpanSize-=0.1;
+      hTwoSpamNorm[0].style.fontSize = portSpanSize + 'vw';
+    }
+    if (portTop <= -9) {
+      portOpacity +=0.05;
+      portTop+=0.2;
+      normalCarSectionHTWO[0].style.top = portTop + 'vw';
+    }
+  }
+  if(window.innerHeight / 100 * 90 > carContainerNorm[0].getBoundingClientRect().top && window.innerHeight / 100 * 50 < carContainerNorm[0].getBoundingClientRect().top){
+    normalCarSection[0].style.background = 'white';
+    normalCarSectionHTWO[0].style.opacity = portOpacity + '';
+  }
+  else{
+    normalCarSection[0].style.background = 'black';
+  }
+}
+
+
+
+// testimonial Animation
+var sectionCar = document.getElementsByClassName('sectionCar');
+var normalCarSectionHTwoCarTwo = document.getElementsByClassName('normalCarSectionHTwoCarTwo');
+var testiSpan = document.getElementsByClassName('testiSpan');
+
+
+var testimonialFontSize = 8.9;
+var testimonialSpanSize = 17.195;
+var testimonialTop = -20;
+
+function testimonialRun() {
+  if(window.innerHeight / 100 * 90 > sectionCar[0].getBoundingClientRect().top){
+    if(testimonialFontSize >= 3.9){
+      testimonialFontSize-=0.1;
+      normalCarSectionHTwoCarTwo[0].style.fontSize = testimonialFontSize + 'vw';
+    }
+    if (testimonialSpanSize >= 12.195) {
+      testimonialSpanSize-=0.1;
+      testiSpan[0].style.fontSize = testimonialSpanSize + 'vw';
+    }
+    if (testimonialTop <= -4) {
+      testimonialTop+=0.2;
+      normalCarSectionHTwoCarTwo[0].style.top = testimonialTop + 'vw';
+    }
+
+    if(window.innerHeight / 100 * 90 > sectionCar[0].getBoundingClientRect().top && window.innerHeight / 100 * 50 < sectionCar[0].getBoundingClientRect().top){
+      sectionCar[0].style.background = 'white';
+    }
+    else{
+      sectionCar[0].style.background = 'black';
+    }
+
+  }
+}
 
 
 window.addEventListener("scroll",()=>{
+  portfolioRun();
+  testimonialRun();
   instaTextAnimFire();
   instaAnimTwo();
   workTextFixScroll();
