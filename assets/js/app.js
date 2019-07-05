@@ -128,17 +128,17 @@ var rightCarArrowBox = document.getElementsByClassName('rightCarArrowBox');
 var carPosition = 0 ;
 
 function carleft() {
-  if(carPosition > -263.333){
+  if(carPosition > -150){
     carPosition -= 33.3333;
   }
-  carMoving[0].style.left = carPosition + '%';
+  carMoving[0].style.left = carPosition + 'vw';
 }
 
 function carRight() {
   if(carPosition < 0){
     carPosition += 33.3333;
   }
-  carMoving[0].style.left = carPosition + '%';
+  carMoving[0].style.left = carPosition + 'vw';
 }
 
 leftCarArrowBox[0].addEventListener('click',()=>{
@@ -210,7 +210,7 @@ function portfolioRun() {
     }
     if (portTop <= -9) {
       portOpacity +=0.05;
-      portTop+=0.2;
+      portTop+=0.4;
       normalCarSectionHTWO[0].style.top = portTop + 'vw';
     }
   }
@@ -246,7 +246,7 @@ function testimonialRun() {
       testiSpan[0].style.fontSize = testimonialSpanSize + 'vw';
     }
     if (testimonialTop <= -4) {
-      testimonialTop+=0.2;
+      testimonialTop+=0.4;
       normalCarSectionHTwoCarTwo[0].style.top = testimonialTop + 'vw';
     }
 

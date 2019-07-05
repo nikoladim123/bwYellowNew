@@ -871,7 +871,7 @@ main{
 }
 
 .normalCarSectionHTwoCarTwo{
-  z-index: 2;
+  z-index: 1;
   transition: 1s;
   position: absolute;
   margin: 0;
@@ -914,16 +914,19 @@ main{
   margin-top: 7.2vw;
   display: flex;
   /* flex:auto; */
+  flex-direction: row;
+  width: fit-content;
 }
 
 .carBox{
+  padding: 1px;
   z-index: auto;
   transition: 1s;
   position: relative;
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
   /* height: 100%; */
   overflow: hidden;
-  width: max-content;
+  width: unset;
   /* margin-right: -2vw; */
   /* background: blue; */
   border: 1px solid transparent;
@@ -940,7 +943,7 @@ main{
 }
 .carBoxImageBG{
   /* width: auto; */
-  /* height: 100%; */
+  height: 100%;
   position: relative;
   top: 0;
   left: 0;
