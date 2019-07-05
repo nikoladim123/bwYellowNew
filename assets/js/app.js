@@ -35,7 +35,7 @@ window.addEventListener("scroll", function(evt) {
 
 function myFunction() {
   setTimeout(function(){
-      aboutMe.style.visibility = 'visible';
+      aboutMe.style.opacity = '1';
       AboutMeBlackAnimDiv.className += ' animateBlackClass';;
    }, 440);
 }

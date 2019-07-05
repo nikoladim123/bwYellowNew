@@ -430,6 +430,7 @@ main{
   top: 8vw;
 }
 .aboutMe{
+  transition: 1s;
   position: relative;
   margin-top: 7.41vw;
   /* top: 7.2vw; */
@@ -437,7 +438,8 @@ main{
   height: 5.93vw;
   left:-11.07vw;
   background-color: #3c4145;
-  visibility:hidden;
+  /* visibility:hidden; */
+  opacity: 0;
 }
 
 .AboutMeWhiteAnimDiv{
