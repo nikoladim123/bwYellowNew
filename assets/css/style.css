@@ -596,11 +596,12 @@ main{
   /* font-size: 3.513vw; */
   font-size: 8.9vw;
   position: relative;
-  top: -5vw;
+  top: -20vw;
   color:rgb(196,194,57);
   opacity: 0.5;
   font-family: 'Blacksword';
   margin-bottom: -1.3vw;
+  /* 123 */
 }
 .bottomServices p span{
   /* font-size: 10.834vw; */

@@ -241,7 +241,7 @@ var servicesFontSize = 8.9;
 var servicesSpanSize = 17.195;
 var servicesTop = -20;
 var serviceOpacity = 0.5;
-function portfolioRun() {
+function serviceRun() {
   if(window.innerHeight / 100 * 90 > threeImageContent[0].getBoundingClientRect().top){
     if(servicesFontSize >= 3.513){
       servicesFontSize-=0.2;
@@ -302,6 +302,7 @@ function testimonialRun() {
 
 window.addEventListener("scroll",()=>{
   portfolioRun();
+  serviceRun();
   testimonialRun();
   instaTextAnimFire();
   instaAnimTwo();
