@@ -230,6 +230,38 @@ function portfolioRun() {
   }
 }
 
+// services text anim
+var threeImageContent = document.getElementsByClassName('threeImageContent');
+var topServicesHeading = document.getElementsByClassName('topServicesHeading');
+var topServiceHeadingSpan = document.getElementsByClassName('topServiceHeadingSpan');
+
+
+
+var servicesFontSize = 8.9;
+var servicesSpanSize = 17.195;
+var servicesTop = -20;
+var serviceOpacity = 0.5;
+function portfolioRun() {
+  if(window.innerHeight / 100 * 90 > threeImageContent[0].getBoundingClientRect().top){
+    if(servicesFontSize >= 3.513){
+      servicesFontSize-=0.2;
+      topServicesHeading[0].style.fontSize = servicesFontSize + 'vw';
+    }
+    if (servicesSpanSize >= 10.834) {
+      servicesSpanSize-=0.2;
+      topServiceHeadingSpan[0].style.fontSize = servicesSpanSize + 'vw';
+    }
+    if (servicesTop <= -0.75) {
+      serviceOpacity += 0.02;
+      servicesTop+=0.6;
+      topServicesHeading[0].style.top = servicesTop + 'vw';
+    }
+  }
+  if(window.innerHeight / 100 * 90 > threeImageContent[0].getBoundingClientRect().top && window.innerHeight / 100 * 50 < threeImageContent[0].getBoundingClientRect().top){
+    topServicesHeading[0].style.opacity = serviceOpacity + '';
+  }
+}
+
 
 
 // testimonial Animation

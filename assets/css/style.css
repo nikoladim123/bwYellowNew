@@ -377,7 +377,7 @@ main{
 .progProgress{
   height: 10px;
   width: 84.5%;
-  background: #4a4b4c;
+  background: #434343;
   border: 1px solid #73777a;
 }
 /*PROGbar one END*/
@@ -584,20 +584,27 @@ main{
   position: absolute;
   margin: 0;
   /* bottom: 0px; */
-  margin-left: 50%;
+  /* margin-left: 50%; */
   top: -16vw;
-  left: -8vw;
+  /* left: -8vw; */
 }
 
 .bottomServices p{
+  width: 100%;
+  text-align: center;
   font-weight: 100;
-  font-size: 3.513vw;
-  color:rgba(196,194,57,0.5);
+  /* font-size: 3.513vw; */
+  font-size: 8.9vw;
+  position: relative;
+  top: -5vw;
+  color:rgb(196,194,57);
+  opacity: 0.5;
   font-family: 'Blacksword';
   margin-bottom: -1.3vw;
 }
 .bottomServices p span{
-  font-size: 10.834vw;
+  /* font-size: 10.834vw; */
+  font-size: 17.195vw;
 }
 
 /* .serviceUnderline{
