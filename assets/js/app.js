@@ -59,21 +59,10 @@ var recentWorkImgDiv = document.getElementsByClassName('recentWorkImgDiv');
 recentWorkImgDiv[0].addEventListener('mouseenter',()=>{
   recentWorkImgDivHtwo[0].style.backgroundPosition = '0%';
 });
-recentWorkImgDiv[0].addEventListener('mouseleave',()=>{
-  recentWorkImgDivHtwo[0].style.backgroundPosition = '200%';
-});
+// recentWorkImgDiv[0].addEventListener('mouseleave',()=>{
+//   recentWorkImgDivHtwo[0].style.backgroundPosition = '200%';
+// });
 
-function workTextFixScroll() {
-  if(window.innerHeight / 100 * 80 >= recentWorkImgDiv[0].getBoundingClientRect().bottom){
-    // recentWorkImgDivHtwo[0].style.position = 'absolute';
-    // recentWorkImgDivHtwo[0].style.top = '-8.8vw';
-    console.log(123);
-  }
-  else{
-    recentWorkImgDivHtwo[0].style.position = 'fixed';
-    recentWorkImgDivHtwo[0].style.top = '20vh';
-  }
-}
 
 // davidOmid Italy Fun
 var recentImgItaly = document.getElementsByClassName('recentImgItaly');
@@ -117,6 +106,24 @@ rnd[1].addEventListener('mouseleave',()=>{
   rndInside[1].style.opacity = '0';
 });
 
+// davidOmid TEXT
+var sideImgText = document.getElementsByClassName('sideImgText');
+var rndTwo = document.getElementsByClassName('rndTwo');
+
+
+function davidOmid() {
+  if(window.innerHeight / 100 * 15 < rnd[0].getBoundingClientRect().top){
+    sideImgText[0].style.right = '12vw';
+  }
+  if(window.innerHeight / 100 * 25 > rnd[0].getBoundingClientRect().top){
+    sideImgText[0].style.right = '27vw';
+    console.log('rnd');
+  }
+  if(window.innerHeight / 100 * 25 > rndTwo[0].getBoundingClientRect().top){
+    sideImgText[0].style.right = '12vw';
+    console.log('rnd');
+  }
+}
 
 // carContainer
 var carContainer = document.getElementsByClassName('carContainer');
@@ -266,7 +273,8 @@ window.addEventListener("scroll",()=>{
   testimonialRun();
   instaTextAnimFire();
   instaAnimTwo();
-  workTextFixScroll();
+  // workTextFixScroll();
   davidOmidFire();
+  davidOmid();
   // cheapFun();
 });

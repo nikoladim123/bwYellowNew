@@ -353,6 +353,7 @@ main{
   font-size: 1.03vw;
   color: #434343;
   margin: 0;
+  font-weight: 700;
   margin-bottom: 0.2vw;
   letter-spacing: 0.2vw;
 }
@@ -694,38 +695,40 @@ main{
 }
 
 .recentWorkImgDivHtwo {
-  /* pointer-events: none; */
+  pointer-events: none;
   transition: 1s;
   margin: 0;
-  margin-left: 9vw;
+  margin-left: 30vw;
   font-weight: 100;
-  position: relative;
+  position: absolute;
   pointer-events: none;
-  font-size: 4.88vw;
+  font-size: 3.5vw;
   color: white;
-  font-family: 'Montserrat-Thin';
-  top: -8.8vw;
+  font-family: 'Blacksword';
+  top: 7.2vw;
   -webkit-text-fill-color: transparent;
   /* -webkit-background-clip: text; */
-  background: -webkit-linear-gradient(360deg, rgba(255,255,255,1), rgba(255,255,255,0));
+  background: -webkit-linear-gradient(360deg, rgba(196,194,57), rgba(196,194,57,0));
   background-position: 200%;
   background-size: 200% 100%;
   background-repeat: no-repeat;
   -webkit-background-clip: text !important;
+  width: 50vw;
 }
 .spanCapital{
   font-size: 9.76vw;
 }
-.recentWorkImgDivHtwo{
+/* .recentWorkImgDivHtwo{
   position: fixed;
   top: 50vh;
-}
+} */
 
 .spanWork{
-  font-family: 'Montserrat-ExtraBold';
+  font-family: 'Blacksword';
 }
 
 .sideImgText {
+  transition: 0.5s;
   position: fixed;
   right: 12vw;
   top: 10vh;
