@@ -35,7 +35,9 @@ window.addEventListener("scroll", function(evt) {
 
 function myFunction() {
   setTimeout(function(){
-      aboutMe.style.opacity = '1';
+      setTimeout(function () {
+        aboutMe.style.opacity = '1';
+      }, 200);
       AboutMeBlackAnimDiv.className += ' animateBlackClass';;
    }, 440);
 }
@@ -64,6 +66,7 @@ function recentWorkText() {
   if(window.innerHeight / 100 * 80 >= recentWorkImgDivHtwo[0].getBoundingClientRect().bottom){
     recentWorkImgDivHtwoAnim[0].style.left = '100%';
     setTimeout(function () {
+      recentWorkImgDiv[0].style.marginTop = '18.789vw';
       recentWorkImgDivHtwo[0].style.opacity = '0.5';
     }, 500);
   }
@@ -149,7 +152,7 @@ function carleft() {
 }
 
 function carRight() {
-  if(carPosition < 0){
+  if(carPosition < 1){
     carPosition += 33.3333;
   }
   carMoving[0].style.left = carPosition + 'vw';
@@ -165,6 +168,7 @@ rightCarArrowBox[0].addEventListener('click',()=>{
 
 
 // instagram anims
+var instagramSection = document.getElementsByClassName('instagramSection');
 var instagramSectionHTWO = document.getElementsByClassName('instagramSectionHTWO');
 var instagramTwoHtwo = document.getElementsByClassName('instagramTwoHtwo');
 var yellowInstagramBnd = document.getElementsByClassName('yellowInstagramBnd');
@@ -185,6 +189,7 @@ function instaAnimTwo() {
     yellowInstagramBnd[1].style.left = '100%';
     setTimeout(function () {
       instagramTwoHtwo[0].style.opacity = '1';
+      instagramSection[0].style.borderBottom = '0vw solid black';
     }, 500);
   }else{
 
@@ -212,6 +217,7 @@ function portfolioRun() {
   if(window.innerHeight / 100 * 80 > carContainerNorm[0].getBoundingClientRect().top){
     normalCarSectionYellowAnim[0].style.left = '100%';
     setTimeout(function () {
+      normalCarSection[0].style.paddingTop = '0';
       normalCarSectionHTWO[0].style.opacity = '0.5';
     }, 500);
   }
@@ -219,6 +225,7 @@ function portfolioRun() {
 
 // services text anim
 var threeImageContent = document.getElementsByClassName('threeImageContent');
+var main = document.getElementsByClassName('main');
 var topServicesHeading = document.getElementsByClassName('topServicesHeading');
 var topServiceHeadingSpan = document.getElementsByClassName('topServiceHeadingSpan');
 var bottomServicesAnimGrad = document.getElementsByClassName('bottomServicesAnimGrad');
@@ -226,8 +233,10 @@ var bottomServicesAnimGrad = document.getElementsByClassName('bottomServicesAnim
 function serviceRun() {
   if(window.innerHeight / 100 * 80 > threeImageContent[0].getBoundingClientRect().top){
     bottomServicesAnimGrad[0].style.left = '100%';
+
     setTimeout(function () {
       topServicesHeading[0].style.opacity = '0.5';
+      main[0].style.paddingBottom = '0';
     }, 500);
   }
 }
@@ -239,13 +248,14 @@ var sectionCar = document.getElementsByClassName('sectionCar');
 var normalCarSectionHTwoCarTwo = document.getElementsByClassName('normalCarSectionHTwoCarTwo');
 var testiSpan = document.getElementsByClassName('testiSpan');
 var testAnimHolderYellowAnim = document.getElementsByClassName('testAnimHolderYellowAnim');
-
+var testimonials = document.getElementsByClassName('testimonialsSection');
 
 
 function testimonialRun() {
   if(window.innerHeight / 100 * 80 > sectionCar[0].getBoundingClientRect().top){
     testAnimHolderYellowAnim[0].style.left = '100%';
     setTimeout(function () {
+      testimonials[0].style.borderTop = '0vw solid #3c4145';
       normalCarSectionHTwoCarTwo[0].style.opacity = '0.5';
     }, 500);
   }
