@@ -206,7 +206,7 @@ var portSpanSize = 17.195;
 var portTop = -20;
 var portOpacity = 0.5;
 function portfolioRun() {
-  if(window.innerHeight / 100 * 90 > carContainerNorm[0].getBoundingClientRect().top){
+  if(window.innerHeight / 100 * 110 > carContainerNorm[0].getBoundingClientRect().top){
     if(portFontSize >= 3.9){
       portFontSize-=0.1;
       normalCarSectionHTWO[0].style.fontSize = portFontSize + 'vw';
@@ -221,7 +221,7 @@ function portfolioRun() {
       normalCarSectionHTWO[0].style.top = portTop + 'vw';
     }
   }
-  if(window.innerHeight / 100 * 90 > carContainerNorm[0].getBoundingClientRect().top && window.innerHeight / 100 * 50 < carContainerNorm[0].getBoundingClientRect().top){
+  if(window.innerHeight / 100 * 110 > carContainerNorm[0].getBoundingClientRect().top && window.innerHeight / 100 * 50 < carContainerNorm[0].getBoundingClientRect().top){
     normalCarSection[0].style.background = 'white';
     normalCarSectionHTWO[0].style.opacity = portOpacity + '';
   }
@@ -242,7 +242,7 @@ var servicesSpanSize = 17.195;
 var servicesTop = -20;
 var serviceOpacity = 0.5;
 function serviceRun() {
-  if(window.innerHeight / 100 * 90 > threeImageContent[0].getBoundingClientRect().top){
+  if(window.innerHeight / 100 * 110 > threeImageContent[0].getBoundingClientRect().top){
     if(servicesFontSize >= 3.513){
       servicesFontSize-=0.2;
       topServicesHeading[0].style.fontSize = servicesFontSize + 'vw';
@@ -257,7 +257,7 @@ function serviceRun() {
       topServicesHeading[0].style.top = servicesTop + 'vw';
     }
   }
-  if(window.innerHeight / 100 * 90 > threeImageContent[0].getBoundingClientRect().top && window.innerHeight / 100 * 50 < threeImageContent[0].getBoundingClientRect().top){
+  if(window.innerHeight / 100 * 110 > threeImageContent[0].getBoundingClientRect().top && window.innerHeight / 100 * 50 < threeImageContent[0].getBoundingClientRect().top){
     topServicesHeading[0].style.opacity = serviceOpacity + '';
   }
 }
