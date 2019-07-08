@@ -669,7 +669,7 @@ main{
   border-radius: 2vw;
   overflow: hidden;
   /* border: 1px solid green; */
-  background: rgba(196,194,57,0.5);
+  background: rgba(196,194,57,0.05);
   margin-left: 0.5vw;
   border: 2px solid rgba(196,194,57,0);
 }
@@ -678,8 +678,8 @@ main{
   align-items: center;
   justify-content: center;
   transition: 0.4s;
-  background-color: rgba(196,194,57,1);
-  border-radius: 1vw;
+  background-color: rgba(196,194,57,0.3);
+  border-radius: 5vw;
   width: 2.5vw;
   height: 2.5vw;
   transform: scale(1);
@@ -720,45 +720,50 @@ main{
 }
 
 .bottomServices {
+  /* border: 1px solid; */
+  overflow: hidden;
+  width: 100%;
   transition: 2s;
   position: absolute;
   margin: 0;
+  z-index: -1;
   /* bottom: 0px; */
   /* margin-left: 50%; */
-  top: -16vw;
+  top: -11.5vw;
   /* left: -8vw; */
 }
 
 .bottomServices p{
+  margin: 0;
   transition: 2s;
   width: 100%;
   text-align: center;
   font-weight: 100;
-  /* font-size: 3.513vw; */
-  font-size: 8.9vw;
+  font-size: 3.513vw;
+  /* font-size: 8.9vw; */
   position: relative;
-  top: -20vw;
+  top: -0.75vw;
   color:rgb(196,194,57);
-  opacity: 0.5;
+  opacity: 0;
   font-family: 'Blacksword';
   margin-bottom: -1.3vw;
   /* 123 */
 }
 .bottomServices p span{
   transition: 2s;
-  /* font-size: 10.834vw; */
-  font-size: 17.195vw;
+  font-size: 10.834vw;
+  /* font-size: 17.195vw; */
 }
 
-/* .serviceUnderline{
-  position: relative;
-  width: 40%;
-  margin-left: 50%;
-  left: -20%;
-  background-color: white;
-  height: 0.3vw;
-  margin-bottom: 3.11vw;
-} */
+.bottomServicesAnimGrad{
+  transition: 2s;
+  top: 0vw;
+  left: -150%;
+  width: 150%;
+  height: 14.975vw;
+  position: absolute;
+  background: linear-gradient(to right, rgba(213,209,99,0) 0%, rgba(213,209,99,1) 25%, rgba(213,209,99,1) 50%, rgba(213,209,99,1) 75%, rgba(213,209,99,0) 100%);
+}
 
 
 .myImg {
@@ -844,7 +849,32 @@ main{
   object-fit: cover;
 }
 
-.recentWorkImgDivHtwo {
+.recentWorkImgDivHtwoContainer{
+  /* border: 1px solid yellow; */
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 7vw;
+}
+.recentWorkImgDivHtwoAnim{
+  top: 0;
+  transition: 2s;
+  left: -150%;
+  width: 150%;
+  height: 14.975vw;
+  position: absolute;
+  background: linear-gradient(to right, rgba(213,209,99,0) 0%, rgba(213,209,99,1) 25%, rgba(213,209,99,1) 50%, rgba(213,209,99,1) 75%, rgba(213,209,99,0) 100%);
+}
+.recentWorkImgDivHtwo{
+  opacity: 0;
+  margin: 0;
+  font-weight: 100;
+  font-size: 3.5vw;
+  color: rgba(196,194,57);
+  font-family: 'Blacksword';
+  margin-left: 30vw;
+}
+/* .recentWorkImgDivHtwo {
   pointer-events: none;
   transition: 1s;
   margin: 0;
@@ -857,14 +887,14 @@ main{
   font-family: 'Blacksword';
   top: 7.2vw;
   -webkit-text-fill-color: transparent;
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   background: -webkit-linear-gradient(360deg, rgba(196,194,57), rgba(196,194,57,0));
   background-position: 200%;
   background-size: 200% 100%;
   background-repeat: no-repeat;
   -webkit-background-clip: text !important;
   width: 50vw;
-}
+} */
 .spanCapital{
   font-size: 9.76vw;
 }
@@ -997,6 +1027,13 @@ main{
   width: 100%;
   /* overflow: hidden; */
 }
+.normalCarSectionHTWOContainer{
+  position: relative;
+  /* top: -13.8vw; */
+  overflow: hidden;
+  width: 100%;
+  height: 14vw;
+}
 .normalCarSectionHTWO{
   transition: 0.1s;
   position: absolute;
@@ -1004,43 +1041,64 @@ main{
   width: 100%;
   text-align: center;
   color: rgba(196,194,57);
-  opacity: 0.5;
+  opacity: 0;
   font-family: 'Blacksword';
   font-size: 3.9vw;
-  top: -9vw;
-  font-size: 8.9vw;
-  top: -20vw;
+
 }
 .normalCarSectionHTWO span{
   font-size: 12.195vw;
-  font-size: 17.195vw;
   letter-spacing: -3vw;
+}
+.specialYelowHolder{
+  position: absolute;
+  top: -1vw;
+  width: 100%;
+  overflow: hidden;
+  height: 15vw;
+}
+.normalCarSectionYellowAnim{
+  top: 0;
+  transition: 2s;
+  left: -150%;
+  width: 150%;
+  height: 14.975vw;
+  position: absolute;
+  background: linear-gradient(to right, rgba(213,209,99,0) 0%, rgba(213,209,99,1) 25%, rgba(213,209,99,1) 50%, rgba(213,209,99,1) 75%, rgba(213,209,99,0) 100%);
 }
 
 .testAnimHolder{
+  /* overflow: hidden; */
   position: relative;
   width: 100%;
-  height: 0;
+  /* height: 0; */
+}
+.testAnimHolderYellowAnim{
+  z-index: 1;
+  top: -2vw;
+  transition: 2s;
+  left: -150%;
+  width: 150%;
+  height: 15vw;
+  position: absolute;
+  background: linear-gradient(to right, rgba(213,209,99,0) 0%, rgba(213,209,99,1) 25%, rgba(213,209,99,1) 50%, rgba(213,209,99,1) 75%, rgba(213,209,99,0) 100%);
 }
 
 .normalCarSectionHTwoCarTwo{
   z-index: 1;
-  transition: 1s;
+  transition: 0.2s;
   position: absolute;
   margin: 0;
   width: 100%;
   text-align: center;
   color: rgba(196,194,57);
-  opacity: 1;
+  opacity: 0;
   font-family: 'Blacksword';
-  /* font-size: 3.9vw; */
-  /* top: -9vw; */
-  top:-20vw;
-  font-size: 8.9vw;
+  font-size: 3.9vw;
+  top: -4vw;
 }
 .normalCarSectionHTwoCarTwo span{
   font-size: 12.195vw;
-  font-size: 17.195vw;
   letter-spacing: -3vw;
 }
 
@@ -1179,10 +1237,11 @@ main{
   font-family: 'Blacksword';
   font-size: 3.9vw;
   margin: 0;
+  letter-spacing: 0.1vw;
 }
 .instagramSection h2 span{
   font-size: 12.195vw;
-  letter-spacing: -3vw;
+  letter-spacing: -2vw;
 }
 
 .yellowInstagramBnd{
