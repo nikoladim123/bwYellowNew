@@ -275,7 +275,7 @@ var testimonialSpanSize = 17.195;
 var testimonialTop = -20;
 
 function testimonialRun() {
-  if(window.innerHeight / 100 * 90 > sectionCar[0].getBoundingClientRect().top){
+  if(window.innerHeight / 100 * 110 > sectionCar[0].getBoundingClientRect().top){
     if(testimonialFontSize >= 3.9){
       testimonialFontSize-=0.1;
       normalCarSectionHTwoCarTwo[0].style.fontSize = testimonialFontSize + 'vw';
@@ -289,7 +289,7 @@ function testimonialRun() {
       normalCarSectionHTwoCarTwo[0].style.top = testimonialTop + 'vw';
     }
 
-    if(window.innerHeight / 100 * 90 > sectionCar[0].getBoundingClientRect().top && window.innerHeight / 100 * 50 < sectionCar[0].getBoundingClientRect().top){
+    if(window.innerHeight / 100 * 110 > sectionCar[0].getBoundingClientRect().top && window.innerHeight / 100 * 50 < sectionCar[0].getBoundingClientRect().top){
       sectionCar[0].style.background = 'white';
     }
     else{
