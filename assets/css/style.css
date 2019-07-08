@@ -720,6 +720,7 @@ main{
 }
 
 .bottomServices {
+  transition: 2s;
   position: absolute;
   margin: 0;
   /* bottom: 0px; */
@@ -729,6 +730,7 @@ main{
 }
 
 .bottomServices p{
+  transition: 2s;
   width: 100%;
   text-align: center;
   font-weight: 100;
@@ -743,6 +745,7 @@ main{
   /* 123 */
 }
 .bottomServices p span{
+  transition: 2s;
   /* font-size: 10.834vw; */
   font-size: 17.195vw;
 }
