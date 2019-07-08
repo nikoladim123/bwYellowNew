@@ -28,6 +28,11 @@
   src: url('../fonts/Montserrat-Bold.otf') format('truetype');
 }
 @font-face {
+  font-family: 'Montserrat-SemiBold';
+  font-display: auto;
+  src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Montserrat-ExtraBold';
   font-display: auto;
   src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
@@ -279,7 +284,7 @@ header{
 main{
   z-index: 1;
   position: relative;
-  height: 102.96vw;
+  height: 110vw;
   /* background: #fcf4ef; */
   /* background: linear-gradient(to bottom, rgba(60,65,69,1) 35%, rgba(104,108,111,1) 120%); */
   background:linear-gradient(to bottom, #3c4145, #474b4f, #51565a, #5d6164, #686c6f);
@@ -298,7 +303,6 @@ main{
   /* background: #e2cf31; */
   background: #fcf4ef;
 }
-
 .insideBottomBg{
   position: relative;
   /* background-image: url('img/test.jpg'); */
@@ -310,13 +314,25 @@ main{
   background-size: 100% 100%;
 }
 
+.daviOmidAboutMe{
+  position: absolute;
+  left: 0;
+  top: 24vw;
+}
+.daviOmidAboutMe p{
+  font-size: 0.6779vw;
+  color: #6f7172;
+  writing-mode:  tb;
+  font-family: 'Montserrat-SemiBold';
+}
+
 .picProgBox {
     position: absolute;
-    width: 40.32vw;
-    height: 62.86vw;
-    left: 40.91vw;
+    width: 43.7vw;
+    height: 67.07vw;
+    left: 47vw;
     top: 15.27vw;
-        box-shadow: 51px 18px 44px 2px rgba(0,0,0,0.15);
+    box-shadow: 51px 18px 44px 2px rgba(0,0,0,0.15);
     /* box-shadow: 13px 18px 13px 2px rgba(0,0,0,0.21); */
     /* background-color: #565a5d; */
     background-image: url('../images/common/progBG.png');
@@ -333,11 +349,11 @@ main{
   right: 0;
   box-shadow: 20px 18px 44px 2px rgba(0,0,0,0.21);
 } */
-.mainImg{
+.mainImg {
   position: absolute;
-  width: 30.155vw;
-  left: 6.06vw;
-  top: 3.917vw;
+  width: 38.7vw;
+  left: 0vw;
+  top: 4.6vw;
 }
 /*PROGDIV*/
 .progBarDiv{
@@ -438,7 +454,7 @@ main{
   width: 30.61vw;
   height: 5.93vw;
   left:-11.07vw;
-  background-color: #3c4145;
+  background-color: #44494d;
   /* visibility:hidden; */
   opacity: 0;
 }
@@ -507,13 +523,13 @@ main{
 /* ANIMATION ANIMATION */
 .aboutMe p{
   font-family: 'Blacksword';
-  color:rgba(196,194,57,0.5);
+  color:rgba(196,194,57,1);
   font-size: 3.4vw;
   margin: 0;
   margin-left: 6.3vw;
   font-weight: 100;
-      top: -13vw;
-      position: relative;
+  top: -13vw;
+  position: relative;
 }
 .aboutMe span{
   font-size: 16.251vw;
@@ -537,32 +553,155 @@ main{
   display: flex;
   left: -2vw;
   /* text-align: justify; */
-  height: 22.8vw;
-  font-size: 3.5139vw;
+  height: 15.2vw;
+  font-size: 2.324vw;
+  line-height: 1.5;
+  letter-spacing: -0.12vw;
   color:#363636;
-  font-family: 'Montserrat-Bold';
+  font-family: 'Montserrat-SemiBold';
+}
+
+.moreaboutmePbox{
+  position: relative;
+  /* border: 1px solid; */
+  display: flex;
+  left: -3vw;
+}
+.moreaboutmePbox:hover{
+  cursor: pointer;
 }
 
 #moreAboutmeP{
   transition: 0.5s;
   position: relative;
-  font-size: 1.1vw;
+  font-size: 1.4527vw;
   margin-left: 2vw;
-  margin-top: -0.2vw;
-  color:rgba(196,194,57,0.5);
+  color:#363a3d;
   filter: brightness(1);
-  font-family: 'Montserrat-Light';
+  font-family: 'Montserrat-SemiBold';
 }
 
-#moreAboutmeP:hover{
+.moreaboutmePbox:hover >#moreAboutmeP{
   cursor: pointer;
   filter: brightness(1.2);
 }
+.aboutMebuttonBox{
+  margin-left: 0.5vw;
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.aboutMebuttonBox:hover{
+  cursor: pointer;
+}
+.aboutMeDot{
+  transition: 0.1s;
+  /* transform: rotate(45deg); */
+  width: 4px;
+  height: 4px;
+  /* background: white; */
+  margin: 2px;
+  /* animation-name: aboutMeDot; */
+  animation-duration: infinite;
+  animation-duration: 1.4s;
+  animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.dotInside{
+  width: 100%;
+  height: 100%;
+  background: #adafb0;
+  transform: rotate(45deg);
+}
+.aboutMebuttonBox .aboutMeDot:nth-child(2){
+  animation-delay: 0.18s;
+}
+.aboutMebuttonBox .aboutMeDot:nth-child(3){
+  animation-delay: 0.32s;
+}
+.aboutMebuttonBox .aboutMeDot:nth-child(4){
+  animation-delay: 0.5s;
+}
+.aboutMebuttonBox .aboutMeDot:nth-child(5){
+  animation-delay: 0.68s;
+}
+.aboutMebuttonBox .aboutMeDot:nth-child(6){
+  animation-delay: 0.86s;
+}
+.aboutMebuttonBox .aboutMeDot:nth-child(7){
+  animation-delay: 1.04s;
+}
+.aboutMebuttonBox .aboutMeDot:nth-child(8){
+  animation-delay: 1.22s;
+}
+.aboutMebuttonBox .aboutMeDot:nth-child(9){
+  animation-delay: 1.40s;
+}
+
+@keyframes aboutMeDot {
+  0%{
+    /* width: 5px; */
+    /* height: 5px; */
+    transform: scale(1);
+  }
+  5%{
+    /* width: 8px; */
+    /* height: 8px; */
+    transform: scale(1.5);
+  }
+  10%{
+    /* width: 5px; */
+    /* height: 5px; */
+    transform: scale(1);
+  }
+  100%{
+    /* width: 5px; */
+    /* height: 5px; */
+  }
+}
+
+.aboutmeButtonContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 2vw;
+  overflow: hidden;
+  /* border: 1px solid green; */
+  background: rgba(196,194,57,0.5);
+  margin-left: 0.5vw;
+  border: 2px solid rgba(196,194,57,0);
+}
+.aboutmeButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  background-color: rgba(196,194,57,1);
+  border-radius: 1vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  transform: scale(1);
+}
+.aboutmeButton img{
+  width: 0.4358vw;
+}
+.moreaboutmePbox:hover > .aboutMebuttonBox > .aboutmeButtonContainer > .aboutmeButton{
+  background: rgba(196,194,57,1);
+  transform: scale(1.7);
+  /* width: 100%; */
+  /* height: 100%; */
+}
+.moreaboutmePbox:hover > .aboutMebuttonBox > .aboutMeDot{
+  animation-name: aboutMeDot;
+}
+
 
 .services{
   position: relative;
   text-align: center;
-  margin-top: 13.5vw;
+  margin-top: 17.5vw;
   left: 2vw;
 }
 
