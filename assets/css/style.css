@@ -954,10 +954,11 @@ main{
 }
 .recentImgItalyDescription{
   width: 33vw;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   text-align: justify;
   color: white;
   opacity: 0.4;
+  font-family: 'Montserrat-Light';
 }
 
 .rnd{
