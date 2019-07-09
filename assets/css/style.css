@@ -939,15 +939,25 @@ main{
   /* border: 1px solid red; */
   overflow: hidden;
   position: absolute;
-  bottom: -12vw;
+  bottom: -15vw;
   right: 0;
   color: white;
   width: 0vw;
 }
 .recentImgItaly{
-  width: 18vw;
+  margin: 0;
+  width: 32vw;
   font-size: 3.5139vw;
+  text-align: right;
+  margin-right: 0.5vw;
   font-family: 'Montserrat-ExtraBold';
+}
+.recentImgItalyDescription{
+  width: 33vw;
+  font-size: 1.5vw;
+  text-align: justify;
+  color: white;
+  opacity: 0.4;
 }
 
 .rnd{
@@ -956,7 +966,8 @@ main{
   position: relative;
   left: -19.52vw;
   margin-left: 50%;
-  margin-bottom: 18.195vw;
+  /* margin-bottom: 18.195vw; */
+  margin-top: 31vw;
   transform: scale(1);
   overflow: hidden;
   cursor: url("../images/common/cross.png") 63.5 63.5,pointer ;
@@ -1019,10 +1030,46 @@ main{
   margin-bottom: 3vw;
   background: rgba(0,0,0,0.64);
 }
+.rndTextDes{
+  width: 33vw;
+  margin-top: 0.5vw;
+  position: relative;
+  /* border: 1px solid; */
+  /* padding-left: 35vw; */
+  left: 35.5vw;
+  overflow: hidden;
+  height: auto;
+}
+.rndTextBox{
+  transition: 1s;
+  position: relative;
+  left: 33vw;
+  top: 0;
+}
+.rndTextDes .recentImgItaly{
+  color: white;
+}
 
 .rndTwo{
   width: 68.326vw;
   left: -34.15vw;
+}
+
+.rndTwoContainer {
+    position: relative;
+    width: 33vw;
+    left: 51vw;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+.rndTwoTextBox{
+  transition: 1s;
+  position: relative;
+  left: 33vw;
+}
+
+.rndTwoContainer .recentImgItaly{
+  color: white;
 }
 
 

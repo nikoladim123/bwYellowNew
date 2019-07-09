@@ -81,7 +81,7 @@ var recentImgItalyContainer = document.getElementsByClassName('recentImgItalyCon
 
 function davidOmidFire() {
   if(window.innerHeight / 100 * 78 >= recentImgItaly[0].getBoundingClientRect().bottom){
-    recentImgItalyContainer[0].style.width = '19vw';
+    recentImgItalyContainer[0].style.width = '33vw';
   }
 }
 
@@ -89,7 +89,9 @@ function davidOmidFire() {
 // picture hover layerinside rnd
 var rnd = document.getElementsByClassName('rnd');
 var rndInside = document.getElementsByClassName('rndInside');
+var rndTextBox = document.getElementsByClassName('rndTextBox');
 var rndInsideContent = document.getElementsByClassName('rndInsideContent');
+var rndTwoTextBox = document.getElementsByClassName('rndTwoTextBox');
   // rnd1
 rnd[0].addEventListener('mouseenter',()=>{
   rndInside[0].style.opacity = '1';
@@ -129,9 +131,16 @@ function davidOmid() {
     sideImgText[0].style.right = '27vw';
     console.log('rnd');
   }
+  if(window.innerHeight / 100 * 80 > rnd[0].getBoundingClientRect().bottom){
+    rndTextBox[0].style.left = '0';
+    console.log('rnd');
+  }
   if(window.innerHeight / 100 * 25 > rndTwo[0].getBoundingClientRect().top){
     sideImgText[0].style.right = '12vw';
     console.log('rnd');
+  }
+  if(window.innerHeight / 100 * 80 > rndTwo[0].getBoundingClientRect().bottom){
+    rndTwoTextBox[0].style.left = '0';
   }
 }
 
