@@ -58,12 +58,14 @@ body{
   margin: 0;
   width: 100%;
   /* overflow-x: hidden; */
+  background: #fbc65c;
 }
 header{
   position: relative;
   height: 86.0599vw;
   overflow:hidden;
   z-index: 1;
+  background: #fbc65c;
   /* margin-bottom: 1.55vw; */
 }
 .three {
@@ -92,34 +94,46 @@ header{
   width: 100%;
   position: absolute;
   transform: scale(1);
-  animation: 25s cover;
+  /* animation: 25s cover; */
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
+.stripes{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: ;
+}
 
-@keyframes cover {
+/* @keyframes cover {
   0%{
     transform: scale(1);
   }
   100%{
     transform: scale(1.1);
   }
-}
+} */
 
 .initContainer{
   position: absolute;
   /* border: 1px solid; */
-  top: 4.360vw;
-  left: 2.8824vw;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.yellowLogo{
+  position: absolute;
+  width: 21.6949vw;
+  left: 0;
+  top: 0;
+}
 
 .initials{
   position: relative;
-  top: 0;
-  left: 0;
+  top: 5.4237vw;
+  left: 1.21vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,8 +235,8 @@ header{
   white-space: nowrap;
   overflow: hidden;
   /* font-family: 'Blacksword'; */
-  color: white;
-  background-color: rgba(226,207,49,0.56);
+  color: #555555;
+  background-color: rgba(255,255,255,0.56);
   font-size: 2.660vw;
   margin: 1vw;
   padding-right: 3vw;
@@ -293,7 +307,7 @@ main{
   height: 110vw;
   /* background: #fcf4ef; */
   /* background: linear-gradient(to bottom, rgba(60,65,69,1) 35%, rgba(104,108,111,1) 120%); */
-  background:linear-gradient(to bottom, #3c4145, #474b4f, #51565a, #5d6164, #686c6f);
+  background: linear-gradient(to bottom, rgba(251,198,92,1) 0%, rgba(215,120,52,1) 100%);
   overflow: hidden;
   padding-bottom: 5vw;
 }
@@ -324,42 +338,39 @@ main{
 .daviOmidAboutMe{
   position: absolute;
   left: 0;
-  top: 24vw;
+  top: 35vw;
 }
 .daviOmidAboutMe p{
-  font-size: 0.6779vw;
-  color: #6f7172;
+  font-size: 1.0169vw;
+  color: white;
+  opacity: 0.5;
   writing-mode:  tb;
   font-family: 'Montserrat-SemiBold';
 }
 
 .picProgBox {
     position: absolute;
-    width: 43.7vw;
+    width: 49vw;
     height: 67.07vw;
-    left: 47vw;
+    left: 44.7vw;
     top: 15.27vw;
     box-shadow: 51px 18px 44px 2px rgba(0,0,0,0.15);
     /* box-shadow: 13px 18px 13px 2px rgba(0,0,0,0.21); */
     /* background-color: #565a5d; */
-    background-image: url('../images/common/progBG.png');
-    background-size: 112% 108%;
-    background-position: 3% 31%;
+    background-image: url(../images/common/progBG.png);
+    background-size: 123% 120%;
+    background-position: -4.8vw 32%;
 }
-/* .picProgBox::before{
-  content: '';
-  display: block;
+.initContainerTwo{
+  /* border: 1px solid; */
   position: absolute;
-  height: 100%;
-  width: 5vw;
+  left: 3vw;
   top: 0;
-  right: 0;
-  box-shadow: 20px 18px 44px 2px rgba(0,0,0,0.21);
-} */
+}
 .mainImg {
   position: absolute;
   width: 38.7vw;
-  left: 0vw;
+  left: 5.3vw;
   top: 4.6vw;
 }
 /*PROGDIV*/
@@ -422,7 +433,7 @@ main{
   height: 65.74vw;
   width: 30.31vw;
   top:8.59vw;
-  left: 16.7vw;
+  left: 19.7vw;
   background-size: 100% 100%;
   /* background-image: url('../images/common/LayerTwo.png'); */
       box-shadow: 86px 66px 64px 2px rgba(0,0,0,0.11);
@@ -450,8 +461,10 @@ main{
 }
 /* ANIMATION ANIMATION */
 .aboutMeContainer{
+  transform: rotate(90deg);
   position: relative;
-  top: 8vw;
+  top: 37vw;
+  left: -26vw;
 }
 .aboutMe{
   transition: 1s;
@@ -461,7 +474,7 @@ main{
   width: 30.61vw;
   height: 5.93vw;
   left:-11.07vw;
-  background-color: #44494d;
+  background-color: #d77a34;
   /* visibility:hidden; */
   opacity: 0;
 }
@@ -528,14 +541,14 @@ main{
   }
 }
 /* ANIMATION ANIMATION */
-.aboutMe p{
+.aboutMe p {
   font-family: 'Blacksword';
-  color:rgba(196,194,57,1);
-  font-size: 3.4vw;
+  color: rgba(255,255,255,0.6);
+  font-size: 6.748vw;
   margin: 0;
-  margin-left: 6.3vw;
+  margin-left: 4.3vw;
   font-weight: 100;
-  top: -13vw;
+  top: -3vw;
   position: relative;
 }
 .aboutMe span{
@@ -583,7 +596,7 @@ main{
   position: relative;
   font-size: 1.4527vw;
   margin-left: 2vw;
-  color:#363a3d;
+  color:#d74d10;
   filter: brightness(1);
   font-family: 'Montserrat-SemiBold';
 }
@@ -617,7 +630,7 @@ main{
 .dotInside{
   width: 100%;
   height: 100%;
-  background: #adafb0;
+  background: white;
   transform: rotate(45deg);
 }
 .aboutMebuttonBox .aboutMeDot:nth-child(2){
@@ -676,16 +689,16 @@ main{
   border-radius: 2vw;
   overflow: hidden;
   /* border: 1px solid green; */
-  background: rgba(196,194,57,0.05);
+  background: rgba(222,110,43,0.05);
   margin-left: 0.5vw;
-  border: 2px solid rgba(196,194,57,0);
+  border: 2px solid rgba(222,110,43,0);
 }
 .aboutmeButton{
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.4s;
-  background-color: rgba(196,194,57,0.3);
+  background-color: rgba(222,110,43,0.3);
   border-radius: 5vw;
   width: 2.5vw;
   height: 2.5vw;
@@ -695,7 +708,7 @@ main{
   width: 0.4358vw;
 }
 .moreaboutmePbox:hover > .aboutMebuttonBox > .aboutmeButtonContainer > .aboutmeButton{
-  background: rgba(196,194,57,1);
+  background: rgba(222,110,43,1);
   transform: scale(1.7);
   /* width: 100%; */
   /* height: 100%; */
@@ -723,7 +736,7 @@ main{
 }
 
 .services a:hover{
-  color:rgba(196,194,57,0.5);
+  color:#eb7900;
 }
 
 .bottomServices {
@@ -773,15 +786,13 @@ main{
 }
 
 
-.myImg {
+/* .myImg {
     position: absolute;
     width: 100%;
     height: 86.0599vw;
-    /* border: 2px solid red; */
     background-image: url(../images/desktop/cover.jpg);
     background-size: 100% 100%;
-    /* z-index: 5; */
-}
+} */
 /* threeImageContent */
 .threeImageContent{
   z-index: 1;
