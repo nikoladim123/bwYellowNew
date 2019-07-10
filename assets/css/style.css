@@ -377,10 +377,10 @@ main{
     height: 67.07vw;
     left: 44.7vw;
     top: 15.27vw;
-    box-shadow: 51px 18px 44px 2px rgba(0,0,0,0.15);
+    /* box-shadow: 51px 18px 44px 2px rgba(0,0,0,0.15); */
     /* box-shadow: 13px 18px 13px 2px rgba(0,0,0,0.21); */
     /* background-color: #565a5d; */
-    background-image: url(../images/common/progBG.png);
+    /* background-image: url(../images/common/progBG.png); */
     background-size: 123% 120%;
     background-position: -4.8vw 32%;
 }
