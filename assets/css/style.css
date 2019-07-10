@@ -62,7 +62,7 @@ body{
 }
 header{
   position: relative;
-  height: 86.0599vw;
+  height: 80vw;
   overflow:hidden;
   z-index: 1;
   background: #fbc65c;
@@ -98,27 +98,28 @@ header{
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
+
 .stripes{
   position: absolute;
   left: 0;
   top: 0;
-  width: ;
+  width: 17.53vw;
 }
 
 .socialMediaHeader{
   /* border: 1px solid; */
   position: absolute;
   right: 7vw;
-  top: 2vw;
+  top: 2.4vw;
 }
 .fab{
   transition: 0.4s;
-  border:5px solid rgba(255,255,255,0.5);
+  border:0.5vw solid rgba(255,255,255,0.5);
   border-radius: 50%;
   background-color: rgba(255,255,255,0.5);
   color: #d74d10;
   margin: 0.5vw;
-  font-size: 1.6vw;
+  font-size: 1.2vw;
 }
 .fa-instagram{
   transform: scale(1.1,1);
@@ -248,7 +249,7 @@ header{
 .recentProjects{
   position: absolute;
   overflow: hidden;
-  top: 9.3865vw;
+  top: 11.38vw;
   left: 67.55vw;
   animation: 5s recentProjects;
   animation-fill-mode: forwards;
@@ -285,7 +286,7 @@ header{
 .headerImages{
   /* border: 2px solid red; */
   position: absolute;
-  top: 15.59vw;
+  top: 17.59vw;
   right: 3.621vw;
   width: auto;
   height: auto;
@@ -1002,7 +1003,7 @@ main{
   left: -19.52vw;
   margin-left: 50%;
   /* margin-bottom: 18.195vw; */
-  margin-top: 31vw;
+  margin-top: 24vw;
   transform: scale(1);
   overflow: hidden;
   cursor: url("../images/common/cross.png") 63.5 63.5,pointer ;
@@ -1088,6 +1089,7 @@ main{
 .rndTwo{
   width: 68.326vw;
   left: -34.15vw;
+  margin-top: 17vw;
 }
 
 .rndTwoContainer {
