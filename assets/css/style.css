@@ -541,7 +541,8 @@ main{
   margin-left:-11.07vw;
   top: 0;
   position: absolute;
-  background-color: rgba(213,209,99,1);
+  /* background-color: rgba(213,209,99,1); */
+  background-color: #e0d64b;
   width: 0;
   height: 100%;
   animation-timing-function: linear;
