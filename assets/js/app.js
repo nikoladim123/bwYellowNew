@@ -244,7 +244,7 @@ function serviceRun() {
     bottomServicesAnimGrad[0].style.left = '100%';
 
     setTimeout(function () {
-      topServicesHeading[0].style.opacity = '0.5';
+      topServicesHeading[0].style.opacity = '1';
       main[0].style.paddingBottom = '0';
     }, 500);
   }
