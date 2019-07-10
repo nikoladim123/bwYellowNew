@@ -105,6 +105,28 @@ header{
   width: ;
 }
 
+.socialMediaHeader{
+  /* border: 1px solid; */
+  position: absolute;
+  right: 7vw;
+  top: 2vw;
+}
+.fab{
+  transition: 0.4s;
+  border:5px solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+  color: #d74d10;
+  margin: 0.5vw;
+  font-size: 1.6vw;
+}
+.fa-instagram{
+  transform: scale(1.1,1);
+}
+.fab:hover{
+  background-color: rgba(255,255,255,1);
+}
+
 /* @keyframes cover {
   0%{
     transform: scale(1);
@@ -574,7 +596,7 @@ main{
   left: -2vw;
   /* text-align: justify; */
   height: 15.2vw;
-  font-size: 2.324vw;
+  font-size: 2vw;
   line-height: 1.5;
   letter-spacing: -0.12vw;
   color:#363636;
