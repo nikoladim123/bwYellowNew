@@ -109,8 +109,8 @@ header{
 .socialMediaHeader{
   /* border: 1px solid; */
   position: absolute;
-  right: 7vw;
-  top: 2.4vw;
+  right: 14vw;
+  top: 3.4vw;
 }
 .fab{
   transition: 0.4s;
